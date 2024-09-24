@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg,#4a05de,#add8e6);
+}
+.container{
+    height: 500px;
+    width: 600px;
+    margin-top: 150px;
+    margin-left: 150px;
+    /* border: 1px solid black; */
+}
+.container h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 74px;
+    color: white;
+    margin-bottom: 40px;
+}
+.container span{
+    color: hsl(60, 82%, 58%);
+}
+.age_cal{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgba(232, 230, 230, 0.619);
+}
+.date{
+    width: 65%;
+    padding: 12px;
+    padding-left: 24px;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    
+    position: relative;
+    outline: 0;
+}
+.age_cal .date::-webkit-calendar-picker-indicator{
+    top: 12px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size:20px ;
+    cursor: pointer;
+}
+.age_cal .cal{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(60, 82%, 58%);
+    cursor: pointer;
+}
+.container h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    word-spacing: 2px;
+}
+
